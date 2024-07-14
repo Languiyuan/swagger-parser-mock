@@ -1,24 +1,22 @@
 # Swagger Parser Mock
 
-[![npm version](https://img.shields.io/npm/v/swagger-parser-mock.svg?style=flat-square)](https://www.npmjs.com/package/swagger-parser-mock)
-
-一个简单的 Swagger 文档解析器，支持生成演示数据与数据实体类。 
+基于[swagger-parser-mock](https://www.npmjs.com/package/swagger-parser-mock)实现的一个简单的 Swagger 文档解析器，支持生成演示数据与数据实体类
 
 ## Features
 
-- 支持 OpenAPI Specification ([1.2](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/1.2.md) & [2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) & [3.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md))
+- 支持 OpenAPI Specification ([1.2](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/1.2.md) & [2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) & [3.X](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md))
 - 支持为 Parameters 与 Responses 生成演示数据
 - 支持根据 Schema 生成数据实体类（JavaScript/Objective-C）
 
 ## API
 
-### swaggerParserMock(url, opts)
+### swaggerParserLanMock(url, opts)
 
-- 参数说明见 [swagger-js](https://github.com/swagger-api/swagger-js#constructor-and-methods)
+- 参数说明见 [swagger-js](https://github.com/Languiyuan/swagger-parser-mock)
 
 ```js
-const swaggerParserMock = require('swagger-parser-mock')
-const specs = swaggerParserMock('http://petstore.swagger.io/v2/swagger.json')
+const swaggerParserLanMock = require('swagger-parser-lanmock')
+const specs = swaggerParserLanMock('http://petstore.swagger.io/v2/swagger.json')
 
 specs.then(docs => {
   const api = docs.paths['/store/order']['post']
@@ -39,12 +37,12 @@ specs.then(docs => {
 ### getJavaScriptEntities(schema)
 
 ```js
-const swaggerParserMock = require('swagger-parser-mock')
+const swaggerParserLanMock = require('swagger-parser-lanmock')
 const {
   getJavaScriptEntities,
   getObjectiveCEntities
 } = require('swagger-parser-mock/lib/entity')
-const specs = swaggerParserMock('http://petstore.swagger.io/v2/swagger.json')
+const specs = swaggerParserLanMock('http://petstore.swagger.io/v2/swagger.json')
 
 specs.then(docs => {
   const api = docs.paths['/store/order']['post']
