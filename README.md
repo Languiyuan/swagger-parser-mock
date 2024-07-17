@@ -1,4 +1,4 @@
-# Swagger Parser Mock
+# Swagger Parser LanMock
 
 基于[swagger-parser-mock](https://www.npmjs.com/package/swagger-parser-mock)实现的一个简单的 Swagger 文档解析器，支持生成演示数据与数据实体类
 
