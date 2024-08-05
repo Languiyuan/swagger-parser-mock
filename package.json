@@ -1,7 +1,7 @@
 {
   "name": "swagger-parser-lanmock",
-  "version": "1.0.2",
-  "description": "基于swagger-parser-mock实现的一个简单的 Swagger 文档解析器，支持生成演示数据与数据实体类",
+  "version": "1.0.4",
+  "description": "基于swagger-parser-mock实现的一个简单的 Swagger 文档解析器，支持生成演示数据与数据实体类，支持解析获取传参",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {

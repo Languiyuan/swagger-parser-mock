@@ -7,6 +7,7 @@
 - 支持 OpenAPI Specification ([1.2](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/1.2.md) & [2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) & [3.X](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md))
 - 支持为 Parameters 与 Responses 生成演示数据
 - 支持根据 Schema 生成数据实体类（JavaScript/Objective-C）
+- 支持生成传参数据
 
 ## API
 
